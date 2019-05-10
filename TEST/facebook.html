@@ -1,0 +1,172 @@
+ <html>
+<head>
+<title>Facebook Home Page</title>
+  <link rel="stylesheet" a href="styles.css"/>
+     <script language="Javascript" type="text/javascript">
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                    return true;
+                else{
+                    alert("please enter a-z / A-Z");
+					return false;
+					
+					}
+            }
+            catch (err) {
+                alert(err.Description);
+            }
+        }
+		
+
+    </script>
+</head>
+<body>
+<div>
+<div class ="header-control">
+ <div class ="control-align">
+ <div class ="img-control">
+  <img src ="image/facee.jpg"/>
+  <div class="login">
+  <table>
+  <tr>
+  <td><p>Email or Phone</p></td>
+  <td><p>Password</p></td>
+  </tr>
+  <tr>
+  <td><input type="text" class ="inputtxt"/></td>
+   <td><input type="password" class ="inputtxt"/></td>
+   <td><input type = "button" class="btn" value = "Log In" /></td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>  
+  <td><p> <a href="fpassword.html">Forgotten account?</p></td>
+  </tr>
+  </table>
+  </div>
+  
+  
+  
+  </div>
+  </div>
+</div>
+<div class="control-align">
+<div class ="left">
+<h3>Facebook helps you connect and share with the people in your life.</h3>
+<img src="image/facebook2.png"width="600px" />
+
+</div>
+<div class="right"> 
+<h2>Create an account</h2>
+<p>It's free and always will be.</p>
+<table> 
+    <tr>
+	<td><input type="text" placeholder="First name" class="ipt" onkeypress="return onlyAlphabets(event,this);"/></td>
+		<td><input type="text" placeholder="Surname" class="ipt" onkeypress="return onlyAlphabets(event,this);"/></td>
+
+	</tr>
+	<tr>
+	<td colspan ="2"> <input type="text" placeholder="Mobile number Or Email address" class="ipt2"</td>
+	</tr>
+	<tr>
+	<td colspan="2"> <input placeholder="New Password" class="ipt2"  type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" for ="psw"  onkeypress="return onlyAlphabets(event,this);"required ></td>
+	</tr>
+	<tr>
+	<td><p> <b>Birthday</b></p></td>
+	</tr>
+	<tr>
+	<td>
+	<select class="dropdown">
+	<option>Day</option>
+	
+	</select>
+	
+	<select class="dropdown">
+	<option>Month</option>
+	</select>
+	
+	
+	<select class="dropdown">
+	<option>Year</option>
+	</select>
+	</td>
+	<td>
+	<p>Why do I need to provide my date of birth?</p>
+	</td>
+
+	</tr>
+	<tr>
+	<td class="ipt3"> <input type = "Radio" name="Gender"  /> <b>Female</b></td>
+	<td class="ipt3"><input type = "Radio" name="Gender"   /><b> Male</b> </td>
+	</tr>
+</table>
+<p class="ipt4">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+<button type="submit" value="Sign Up" class="signup"> Sign Up</button>
+<p class="p"><a href="">Create a Page</a>for a celebrity, band or business.</p>
+</div>
+
+
+
+</div>
+</div>
+<div>
+<div class = "footer-controll"> 
+<ul class = "li-controler" color="red">
+
+<li>English/</li>
+<li>हिन्दी/</li>
+<li>Urdu/</li>
+<li>தமிழ்/</li>
+<li>বাংলা/</li>
+<li>मराठी/</li>
+<li>తెలుగు/</li>
+<li>ગુજરાતી/</li>
+<li>ಕನ್ನಡ/</li>
+<li>മലയാളം/</li>
+<li>Español/</li>
+<li>+</li>
+</ul>
+<div class ="content"></div>
+<ul class="li-controler" &nbsp;>
+<li>Signup</li> &nbsp;&nbsp;
+<li>LOgin</li>&nbsp;&nbsp;
+<li>Messenger</li>&nbsp;&nbsp;
+<li>facebook lite</li>&nbsp;&nbsp;
+<li>Mobile</li>&nbsp;&nbsp;
+<li>Find friends</li>&nbsp;&nbsp;
+<li>Pages</li>&nbsp;&nbsp;
+<li>Page Catagerios</li>&nbsp;&nbsp;
+<li>places</li>&nbsp;&nbsp;
+<li>Games</li>&nbsp;&nbsp;
+<li>Locations</li>&nbsp;&nbsp;
+<li>Marketplace</li>&nbsp;&nbsp;
+<li>Groups</li>&nbsp;&nbsp;
+<li>instragram</li>&nbsp;&nbsp;
+<li>Local</li>&nbsp;&nbsp;
+<li>About</li>&nbsp;&nbsp;
+<li>Creat Ad</li>&nbsp;&nbsp;
+<li>Create Page</li>&nbsp;&nbsp;
+<li>developers</li>&nbsp;&nbsp;
+<li>Careers</li>&nbsp;&nbsp;
+<li>Private</li>&nbsp;&nbsp;
+<li>Cookie</li>&nbsp;&nbsp;
+<li>Ad choice</li>&nbsp;&nbsp;
+<li>Terms</li>&nbsp;&nbsp;
+<li>Account security</li>&nbsp;&nbsp;
+<li>Login Help</li>&nbsp;
+<li>Help</li>&nbsp;
+</ul>
+
+</div>
+</div>
+
+</body>
+</html>
