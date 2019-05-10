@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title></title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script>
+    $(document).ready(function (){
+         var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+         var myOptions = {
+             zoom: 4,
+             center: myLatlng,
+             mapTypeId: google.maps.MapTypeId.ROADMAP
+             }
+          map = new google.maps.Map($('#map'), myOptions);
+          var marker = new google.maps.Marker({
+              position: myLatlng, 
+              map: map,
+          title:"Fast marker"
+         });
+    }) 
+    </script>
+	<style>
+
+    </head>
+    <body>
+
+    <div id="map"></div>
+    </body>
+    </html>
